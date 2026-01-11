@@ -12,7 +12,7 @@ This project treats security controls as production systems and actively verifie
 - **Enforcement — Does the control actually enforce the intended security policy?**
 ***
 <div align="center">
-  <img src="doc/screenshots/Project.png" alt="project" width="5000"> 
+  <img src="doc/screenshots/project_flow.png" alt="project" width="5000"> 
 </div>
 
 ***
