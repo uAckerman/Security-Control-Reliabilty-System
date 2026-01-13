@@ -1,3 +1,5 @@
+# Maintainer: Uzair Khan
+
 import requests
 
 TOKEN_URL = "http://localhost:8080/realms/scrs-core/protocol/openid-connect/token"
