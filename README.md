@@ -3,7 +3,7 @@ I’ve seen security controls fail silently, so I built a system that continuous
 
 **Author:** Uzair Khan
 
-## Overview
+# Overview
 
 Modern security programs often assume that controls, safeguards, or protection mechanisms continue to work correctly once configured. In reality, these controls can silently fail, drift, or degrade over time due to misconfigurations, system updates, or integration issues.  
   
@@ -20,7 +20,7 @@ The goal is to detect silent security failures before attackers do.
 
 ---
 
-## Why This Matters
+# Why This Matters
 
 In real environments, security controls can degrade due to:
 
@@ -34,7 +34,7 @@ In real environments, security controls can degrade due to:
 
 Traditional tools often validate configuration, not runtime behavior.
 
-## How the Engine Works
+# How the Engine Works
 
 At a high level:
 
@@ -55,12 +55,12 @@ At a high level:
 
 ***
 
-## Example Control: Keycloak (Open-Source IdP)  
+# Example Control: Keycloak (Open-Source IdP)  
 To demonstrate the engine, I used **Keycloak** as a reference open-source security control.
 
 **Keycloak provides:** _Authentication and Access Enforcement | Policy and Flow Configuration | Event and Audit Logging_
 
-### Keycloak Flow Configuration (**[Full Keycloak Configuration](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/Keycloak_config.md)** )
+## Keycloak Flow Configuration (**[Full Keycloak Configuration](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/Keycloak_config.md)** )
 
 - A dedicated Keycloak realm **scrs-core** is created to isolate the environment.
 
