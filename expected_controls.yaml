@@ -1,0 +1,8 @@
+mfa:
+  required: true
+  enforcement_method: otp
+  login_without_otp_allowed: false
+
+logging:
+  auth_events_required: true
+  max_detection_delay_seconds: 10
