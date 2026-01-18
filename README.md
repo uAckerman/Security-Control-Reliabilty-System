@@ -59,5 +59,10 @@ To demonstrate the engine, I used **Keycloak** as a reference open-source securi
 
 **Keycloak provides:** _Authentication and Access Enforcement | Policy and Flow Configuration | Event and Audit Logging_
 
+***
+<div align="center">
+  <img src="doc/screenshots/keycloak_implementation.png" alt="project" width="5000"> 
+</div>
 
+***
 
