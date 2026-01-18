@@ -60,12 +60,29 @@ To demonstrate the engine, I used **Keycloak** as a reference open-source securi
 
 **Keycloak provides:** _Authentication and Access Enforcement | Policy and Flow Configuration | Event and Audit Logging_
 
-### Keycloak Configuration
+### Keycloak Flow Configuration (**[Full Keycloak Configuration](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/Keycloak_config.md)** )
+
+- A dedicated Keycloak realm **scrs-core** is created to isolate the environment.
+
+- A test user **uzair-test** is provisioned with non-temporary credentials.
+
+- MFA (TOTP) is configured and enforced in the authentication flow named as **Browser_Flow**.
+
+- A confidential OAuth client is registered for OpenID Connect.
+
+- Client credentials are generated for secure token exchange.
+
+- Required realm-management roles are assigned for visibility and inspection.
 
 ***
 <div align="center">
-  <img src="doc/screenshots/keycloak_implementation.png" alt="project" width="5000"> 
+  <img src="doc/screenshots/keycloak_implementation.png" alt="project" width="1000"> 
 </div>
 
 ***
+
+
+
+
+
 
