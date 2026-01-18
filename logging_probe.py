@@ -1,3 +1,5 @@
+# Maintainer : Uzair Khan
+
 import time
 
 def check_auth_logging(events, login_time, max_delay):
