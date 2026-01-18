@@ -15,6 +15,11 @@ Instead of trusting configuration or dashboards, the engine executes real intera
 
 The goal is to detect silent security failures before attackers do.
 
+---
+> ℹ️ **The architecture is tool-agnostic and can be extended to other platforms (IAM, WAF, EDR, firewalls, cloud controls)**    
+
+---
+
 ## Why This Matters
 
 In real environments, security controls can degrade due to:
@@ -51,10 +56,6 @@ At a high level:
 ***
 
 ## Example Control: Keycloak (Open-Source IdP)  
----
-> ℹ️ **The architecture is tool-agnostic and can be extended to other platforms (IAM, WAF, EDR, firewalls, cloud controls)**    
-
----
 To demonstrate the engine, I used **Keycloak** as a reference open-source security control.
 
 **Keycloak provides:** _Authentication and Access Enforcement | Policy and Flow Configuration | Event and Audit Logging_
