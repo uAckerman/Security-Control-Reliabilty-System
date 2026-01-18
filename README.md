@@ -7,12 +7,33 @@ I’ve seen security controls fail silently, so I built a system that continuous
 
 Modern security programs often assume that controls, safeguards, or protection mechanisms continue to work correctly once configured. In reality, these controls can silently fail, drift, or degrade over time due to misconfigurations, system updates, or integration issues.  
 
-This project treats security controls as production systems and actively verifies:  
+Instead of trusting configuration or dashboards, the engine executes real interactions against a security control and evaluates:
 
-- **Enforcement — Does the control actually enforce the intended security policy?**
+**- Whether the control enforces its policy**  
+**- Whether security actions are visible**  
+**- Whether detection happens within an acceptable latency**
+
+The goal is to detect silent security failures before attackers do.
+
 ***
 <div align="center">
   <img src="doc/screenshots/project_flow.png" alt="project" width="5000"> 
 </div>
 
 ***
+
+## Why This Matters
+
+In real environments, security controls can degrade due to:
+
+- Configuration drift
+
+- Platform upgrades
+
+- Integration failures
+
+- Pipeline issues
+
+Traditional tools often validate configuration, not runtime behavior.
+
+## Example Control: Keycloak (Open-Source IdP)
