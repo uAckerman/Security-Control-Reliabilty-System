@@ -15,13 +15,6 @@ Instead of trusting configuration or dashboards, the engine executes real intera
 
 The goal is to detect silent security failures before attackers do.
 
-***
-<div align="center">
-  <img src="doc/screenshots/project_flow.png" alt="project" width="5000"> 
-</div>
-
-***
-
 ## Why This Matters
 
 In real environments, security controls can degrade due to:
@@ -36,9 +29,32 @@ In real environments, security controls can degrade due to:
 
 Traditional tools often validate configuration, not runtime behavior.
 
+## How the Engine Works
+
+At a high level:
+
+**- The engine loads an expected control state from configuration.**
+
+**- Active probes execute real requests against the control.**
+
+**- Runtime behavior is captured and analyzed.**
+
+**- Observed behavior is compared against expectations.**
+
+**- Drift, degradation, or failures trigger alerts.**
+
+***
+<div align="center">
+  <img src="doc/screenshots/project_flow.png" alt="project" width="5000"> 
+</div>
+
+***
+
 ## Example Control: Keycloak (Open-Source IdP)  
+---
 > ℹ️ **The architecture is tool-agnostic and can be extended to other platforms (IAM, WAF, EDR, firewalls, cloud controls)**    
 
+---
 To demonstrate the engine, I used **Keycloak** as a reference open-source security control.
 
 **Keycloak provides:** _Authentication and Access Enforcement | Policy and Flow Configuration | Event and Audit Logging_
