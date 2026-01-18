@@ -6,7 +6,7 @@ I’ve seen security controls fail silently, so I built a system that continuous
 ## Overview
 
 Modern security programs often assume that controls, safeguards, or protection mechanisms continue to work correctly once configured. In reality, these controls can silently fail, drift, or degrade over time due to misconfigurations, system updates, or integration issues.  
-
+  
 Instead of trusting configuration or dashboards, the engine executes real interactions against a security control and evaluates:
 
 **- Whether the control enforces its policy**  
@@ -36,4 +36,12 @@ In real environments, security controls can degrade due to:
 
 Traditional tools often validate configuration, not runtime behavior.
 
-## Example Control: Keycloak (Open-Source IdP)
+## Example Control: Keycloak (Open-Source IdP)  
+> ℹ️ **The architecture is tool-agnostic and can be extended to other platforms (IAM, WAF, EDR, firewalls, cloud controls)**    
+
+To demonstrate the engine, I used **Keycloak** as a reference open-source security control.
+
+**Keycloak provides:** _Authentication and Access Enforcement | Policy and Flow Configuration | Event and Audit Logging_
+
+
+
