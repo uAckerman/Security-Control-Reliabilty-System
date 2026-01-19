@@ -63,3 +63,12 @@ Client secrets are generated and stored in a secure place.
 </div>
 
 ***
+
+Roles are assigned to provide controlled access for inspecting users, realm configuration, and authentication events.
+
+***
+<div align="center">
+  <img src="doc/screenshots/p9.png" alt="project" width="5000"> 
+</div>
+
+***
