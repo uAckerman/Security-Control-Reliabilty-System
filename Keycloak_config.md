@@ -44,3 +44,22 @@ Time-based One-Time Password (TOTP) MFA is configured and enforced using a custo
 </div>
 
 ***
+
+### 4. OAuth Client Registration and Management
+A confidential OAuth client is registered named as **security-prober** using the OpenID Connect protocol to support secure authorization.
+
+***
+<div align="center">
+  <img src="doc/screenshots/p7.png" alt="project" width="5000"> 
+</div>
+
+***
+
+Client secrets are generated and stored in a secure place.
+
+***
+<div align="center">
+  <img src="doc/screenshots/p8.png" alt="project" width="5000"> 
+</div>
+
+***
