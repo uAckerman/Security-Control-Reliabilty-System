@@ -76,7 +76,7 @@ To demonstrate the engine, I used **Keycloak** as a reference open-source securi
 
 ***
 <div align="center">
-  <img src="doc/screenshots/keycloak_implementation.png" alt="project" width="1000"> 
+  <img src="doc/screenshots/keycloak_implementation.png" alt="project" width="900"> 
 </div>
 
 ***
