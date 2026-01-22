@@ -83,6 +83,16 @@ To demonstrate the engine, I used **Keycloak** as a reference open-source securi
 
 # Phase 02 — IDP Connection Layer
 
+This layer authenticates machine identities using the OAuth2 client credentials flow and manages short-lived access tokens for service communication. It centralizes all Keycloak administrative API interactions, ensuring that security logic remains isolated and reusable.
+
+## How it works
+1. A service requests a machine token.
+2. ```token.py``` performs OAuth2 Client Credentials authentication.
+3. Keycloak issues an access token.
+4. The token is injected into KeycloakClient.
+5. Secure API calls are executed against the Admin API.
+
+
 
 
 
