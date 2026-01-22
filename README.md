@@ -87,11 +87,15 @@ This layer authenticates machine identities using the OAuth2 client credentials 
 
 ## How it works
 1. A service requests a machine token.
-2. ```token.py``` performs OAuth2 Client Credentials authentication.
+2. ```oauth_token.py``` performs OAuth2 Client Credentials authentication.
 3. Keycloak issues an access token.
 4. The token is injected into KeycloakClient.
 5. Secure API calls are executed against the Admin API.
 
+| File | Responsibility |
+|------|----------------|
+| **[oauth_token.py](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/oauth_token.py)**  | Handles OAuth2 client credential authentication and token issuance |
+| **[keycloak_client.py](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/keycloak_client_api.py)**  | Wraps Keycloak Admin APIs and injects authorization headers |
 
 
 
