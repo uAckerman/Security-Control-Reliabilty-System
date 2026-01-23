@@ -20,6 +20,13 @@ The goal is to detect silent security failures before attackers do.
 
 ---
 
+***
+<div align="center">
+  <img src="doc/screenshots/project_flow.png" alt="project" width="5000"> 
+</div>
+
+***
+
 # Why This Matters
 
 In real environments, security controls can degrade due to:
@@ -48,13 +55,6 @@ At a high level:
 
 **- Drift, degradation, or failures trigger alerts.**
 
-***
-<div align="center">
-  <img src="doc/screenshots/project_flow.png" alt="project" width="5000"> 
-</div>
-
-***
-
 # Example Control: Keycloak (Open-Source IdP)  
 To demonstrate the engine, I used **Keycloak** as a reference open-source security control.
 
@@ -76,7 +76,7 @@ To demonstrate the engine, I used **Keycloak** as a reference open-source securi
 
 ***
 <div align="center">
-  <img src="doc/screenshots/keycloak_implementation.png" alt="project" width="900"> 
+  <img src="doc/screenshots/flow_diagram.png" alt="project" width="1100"> 
 </div>
 
 ***
