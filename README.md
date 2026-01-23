@@ -94,7 +94,7 @@ This layer authenticates machine identities using the OAuth2 client credentials 
 | File | Responsibility |
 |------|----------------|
 | **[oauth_token.py](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/oauth_token.py)**  | Handles OAuth2 client credential authentication and token issuance |
-| **[keycloak_client.py](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/keycloak_client_api.py)**  | Wraps Keycloak Admin APIs and injects authorization headers |
+| **[keycloak_client.py](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/keycloak_client_api.py)**  | All Keycloak API calls live here |
 
 ***
 <img src="doc/screenshots/p10.png" alt="project" width="700"> 
