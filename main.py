@@ -26,15 +26,6 @@ def main():
 
     login_time = time.time()
 
-    if CONFIG["mfa"]["required"] and result["status_code"] == 401:
-        send_alert(
-            "MFA Enforcement",
-            "Enabled",
-            "401 (Invalid Grant)",
-            "MFA is actively preventing non-interactive authentication",
-            "None"
-        )
-
     if CONFIG["mfa"]["required"] and result["status_code"] == 200:
         send_alert(
             "MFA Enforcement",
@@ -44,6 +35,22 @@ def main():
             "Enable OTP Authentication"
         )
 
+# --- LOGGING PROBE ---
+    events = kc.get_events()
+    visible = check_auth_logging(
+        events,
+        login_time,
+        CONFIG["logging"]["max_detection_delay_seconds"]
+    )
+
+    if not visible:
+        send_alert(
+            "MFA Enforcement",
+            "Enabled",
+            "401 (Invalid Grant)",
+            "MFA is actively preventing non-interactive authentication",
+            "None"
+        )
 
 if __name__ == "__main__":
     main()
