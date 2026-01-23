@@ -101,4 +101,15 @@ This layer authenticates machine identities using the OAuth2 client credentials 
 
 ***
 
+# Phase 03 — MFA Enforcement Probe 
+
+This Probe validates whether **Multi-Factor Authentication (MFA)** is properly enforced by the Keycloak. It simulates a direct authentication attempt using only **username** and **password** and observes how the IdP responds.
+
+## How it works
+The probe uses the OAuth2 Resource Owner Password Credentials flow to attempt authentication with only primary credentials.  
+The core logic lives in [mfa_probe.py](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/mfa_probe.py) and returns:
+
+- HTTP status code (200 — MFA ❌, 400/401 — MFA ✅)
+- Raw response body
+- Request duration
 
