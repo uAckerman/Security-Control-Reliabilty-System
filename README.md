@@ -169,6 +169,15 @@ For testing purposes, the **OTP form** step has been disabled in the **Browser_F
 
 ***
 
+## Phase 07 — Test Matrix
+
+| Scenario        | Expected State                  | System Result                         |
+|-----------------|--------------------------------|--------------------------------------|
+| Baseline        | MFA enforced, logging visible  | PASS — Controls operating normally   |
+| MFA Disabled    | MFA must be enforced           | FAIL — MFA control drift detected    |
+| Logging Disabled| Auth events must be visible    | FAIL — Visibility degraded           |
+
+
 # Conclusion
 Security controls often look correct on paper but fail silently in real environments. This engine demonstrates how security intent can be translated into continuous, runtime verification of identity enforcement and visibility.   
 
