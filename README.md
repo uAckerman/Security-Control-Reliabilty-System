@@ -152,3 +152,10 @@ This file **[main.py](https://github.com/uAckerman/Security-Control-Reliabilty-S
 ```
 python main.py
 ```
+
+
+## Execution with MFA Enforced
+***
+<img src="doc/screenshots/p12.png" alt="project" width="700"> 
+
+***
