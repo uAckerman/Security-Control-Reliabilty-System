@@ -154,8 +154,18 @@ python main.py
 ```
 
 
-## Execution with MFA Enforced
+## Execution with MFA Enforced 
 ***
 <img src="doc/screenshots/p12.png" alt="project" width="700"> 
 
 ***
+
+## Execution without MFA Enforced (Drift Detected)
+
+For testing purposes, the **OTP form** step has been disabled in the **Browser_Flow** authentication flow.
+
+***
+<img src="doc/screenshots/p13.png" alt="project" width="700"> 
+
+***
+
