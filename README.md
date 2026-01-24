@@ -147,3 +147,8 @@ This file **[main.py](https://github.com/uAckerman/Security-Control-Reliabilty-S
 - Execute security probes.
 - Evaluate results against policy.
 - Trigger alerts on violations.
+
+## Example Execution
+```
+python main.py
+```
