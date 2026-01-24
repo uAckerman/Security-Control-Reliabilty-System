@@ -139,4 +139,11 @@ logging:
   auth_events_required: true
   max_detection_delay_seconds: 10
 ```
+# Phase 06 — Execution 
+This file **[main.py](https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/main.py)** will execute:
 
+- Load declared security controls.
+- Authenticate to the Identity Provider.
+- Execute security probes.
+- Evaluate results against policy.
+- Trigger alerts on violations.
