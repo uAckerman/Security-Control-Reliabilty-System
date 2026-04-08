@@ -183,7 +183,6 @@ This approach helps teams detect drift, misconfiguration, and blind spots early 
 **The engine can be extended to support additional identity controls, scheduling, dashboards, and SOAR integrations, making it a strong foundation for continuous security validation.**
 
 # Extended Validation
-Additional implementations using other security tools have been included in this repository.  
-Please refer to the corresponding sections for configuration details and probe implementations.
+Additional implementations using other security tools have been included below. Please refer to the corresponding sections for configuration details and probe implementations.
 
-
+- [ModSecurity WAF Control] (https://github.com/uAckerman/Security-Control-Reliabilty-System/blob/main/ModSecurity%20WAF%20Control%20Validation.md)
