@@ -176,13 +176,14 @@ For testing purposes, the **OTP form** step has been disabled in the **Browser_F
 | Baseline        | MFA enforced, logging visible  | PASS — Controls operating normally   |
 | MFA Disabled    | MFA must be enforced           | FAIL — MFA control drift detected    |
 | Logging Disabled| Auth events must be visible    | FAIL — Visibility degraded           |
-
-
-# Conclusion
-Security controls often look correct on paper but fail silently in real environments. This engine demonstrates how security intent can be translated into continuous, runtime verification of identity enforcement and visibility.   
+ 
 
 This approach helps teams detect drift, misconfiguration, and blind spots early before they become incidents.  
 
 **The engine can be extended to support additional identity controls, scheduling, dashboards, and SOAR integrations, making it a strong foundation for continuous security validation.**
+
+# Extended Validation
+Additional implementations using other security tools have been included in this repository.  
+Please refer to the corresponding sections for configuration details and probe implementations.
 
 
