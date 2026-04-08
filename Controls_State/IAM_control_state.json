@@ -1,0 +1,10 @@
+{
+  "mfa": {
+    "enforcement": "unknown",
+    "last_checked": null
+  },
+  "logging": {
+    "visibility": "unknown",
+    "last_checked": null
+  }
+}
