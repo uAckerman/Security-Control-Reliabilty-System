@@ -16,3 +16,22 @@ Use the following command:
 sudo apt update -y
 sudo apt install nginx libnginx-mod-http-modsecurity modsecurity-crs -y
 ```
+
+## ModSecurity Module
+
+Check for ModSecurity Module if enabled by following command:
+
+```
+cat /etc/nginx/modules-enabled/50-mod-http-modsecurity.conf
+```
+
+***
+<img src="doc/screenshots/p14.png" alt="project" width="700"> 
+
+***
+
+# Phase 02 - Configure ModSecurity Engine
+
+
+
+
